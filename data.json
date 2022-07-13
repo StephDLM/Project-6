@@ -15,7 +15,7 @@
             "project_name": "Data Pagination and Filtering",
             "description": "something",
             "technologies": "{'JavaScript', 'HTML', 'CSS'}",
-            "live_link": "link to live server",
+            "live_link": "https://github.com/StephDLM/Data-Pagination-and-Filtering/settings/pages",
             "github_link": "https://github.com/StephDLM/Data-Pagination-and-Filtering.git",
             "image_urls": "/static/images/image name"
 
@@ -26,7 +26,7 @@
             "project_name": "Accessible Form",
             "description": "something",
             "technologies": "{'JavaScript', 'HTML', 'CSS'}",
-            "live_link": "link to live server",
+            "live_link": "https://stephdlm.github.io/Accessible-Form/",
             "github_link": "https://github.com/StephDLM/Accessible-Form.git",
             "image_urls": "/static/images/image name"
 
