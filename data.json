@@ -1,0 +1,58 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "project_name": "Random Quote Generator",
+            "description": "Created a random quote generator that iterates through 5 different quotes when you click the 'generate' button.",
+            "technologies":"{'JavaScript', 'HTML', 'CSS'}",
+            "live_link": "https://stephdlm.github.io/A-Random-Quote-Generator/",
+            "github_link": "https://github.com/StephDLM/A-Random-Quote-Generator.git",
+            "image_urls": "/static/images/image name"
+
+        },
+        {
+            "id": 1,
+            "project_name": "Data Pagination and Filtering",
+            "description": "something",
+            "technologies": "{'JavaScript', 'HTML', 'CSS'}",
+            "live_link": "link to live server",
+            "github_link": "https://github.com/StephDLM/Data-Pagination-and-Filtering.git",
+            "image_urls": "/static/images/image name"
+
+
+        },
+        {
+            "id": 2,
+            "project_name": "Accessible Form",
+            "description": "something",
+            "technologies": "{'JavaScript', 'HTML', 'CSS'}",
+            "live_link": "link to live server",
+            "github_link": "https://github.com/StephDLM/Accessible-Form.git",
+            "image_urls": "/static/images/image name"
+
+
+        },
+        {
+            "id": 3,
+            "project_name": "OOP Game Show App",
+            "description": "something",
+            "technologies":"{'JavaScript', 'HTML', 'CSS'}",
+            "live_link": "link to live server",
+            "github_link": "https://github.com/StephDLM/OOP-Game-Show-App.git",
+            "image_urls": "/static/images/image name"
+
+
+        },
+        {
+            "id": 4,
+            "project_name": "Public API Request",
+            "description": "something",
+            "technologies":"{'JavaScript', 'HTML', 'CSS', 'API'}",
+            "live_link": "link to live server",
+            "github_link": "https://github.com/StephDLM/Public-API-Request.git",
+            "image_urls": "/static/images/image name"
+
+
+        }
+    ]
+}

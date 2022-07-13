@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
+  },
+  "name": "static_node_and_express_site-v1",
+  "version": "1.0.0",
+  "description": "using static node and express to show all of my projects for my techdegree",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephDLM/Static-Node.js-and-Express-Site.git"
+  },
+  "author": "Stephanie De La Melena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephDLM/Static-Node.js-and-Express-Site/issues"
+  },
+  "homepage": "https://github.com/StephDLM/Static-Node.js-and-Express-Site#readme"
+}
