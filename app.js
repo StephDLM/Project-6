@@ -34,24 +34,6 @@ app.get('/project.id', (req, res) => {
         res.render('error', { error: err })
     }});
 
-//render error page 404
-app.use ((req,res) => {
-    const err = new Error();
-    err.status = 404;
-    err.message = "This web page can't be located";
-    res.render('error', { error: err })
-
-})
-
-app.use((err, req, res, next) => {
-    if (err === 404){
-        next(err)
-    } else {
-        err.status = 500;
-        err.message = "Server isn't connected";
-        res.render('error', { error: err })
-    }
-  });
 
 //start server
 app.listen(3000, () => {
