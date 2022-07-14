@@ -7,17 +7,17 @@
             "technologies":"{'JavaScript', 'HTML', 'CSS'}",
             "live_link": "https://stephdlm.github.io/A-Random-Quote-Generator/",
             "github_link": "https://github.com/StephDLM/A-Random-Quote-Generator.git",
-            "image_urls": "/static/images/image name"
+            "image_urls": "/static/images/Unit1-550.png"
 
         },
         {
             "id": 1,
             "project_name": "Data Pagination and Filtering",
-            "description": "something",
+            "description": "Using pagination to  display 9 students on the page and added navigation, that the user can click to display different pages of students.",
             "technologies": "{'JavaScript', 'HTML', 'CSS'}",
             "live_link": "https://github.com/StephDLM/Data-Pagination-and-Filtering/settings/pages",
             "github_link": "https://github.com/StephDLM/Data-Pagination-and-Filtering.git",
-            "image_urls": "/static/images/image name"
+            "image_urls": "/static/images/Unit2-550.png"
 
 
         },
@@ -28,7 +28,7 @@
             "technologies": "{'JavaScript', 'HTML', 'CSS'}",
             "live_link": "https://stephdlm.github.io/Accessible-Form/",
             "github_link": "https://github.com/StephDLM/Accessible-Form.git",
-            "image_urls": "/static/images/image name"
+            "image_urls": "/static/images/Unit3-550.png"
 
 
         },
@@ -37,20 +37,20 @@
             "project_name": "OOP Game Show App",
             "description": "something",
             "technologies":"{'JavaScript', 'HTML', 'CSS'}",
-            "live_link": "link to live server",
+            "live_link": "https://stephdlm.github.io/OOP-Game-Show-App/",
             "github_link": "https://github.com/StephDLM/OOP-Game-Show-App.git",
-            "image_urls": "/static/images/image name"
+            "image_urls": "/static/images/Unit4-550.png"
 
 
         },
         {
             "id": 4,
             "project_name": "Public API Request",
-            "description": "something",
-            "technologies":"{'JavaScript', 'HTML', 'CSS', 'API'}",
-            "live_link": "link to live server",
+            "description": "Built an app that uses Random User Generator API  to grab information for 12 random “employees,” and use that data to build a prototype for an employee directory. Requested a JSON object from the API and parse the data so that 12 employees are listed in a grid with their thumbnail image, full name, email, and location. Clicking the employee’s image or name will open a modal window with more information, such as the employee’s birthday and address.",
+            "technologies":"{'JavaScript', 'HTML', 'CSS', 'API', 'JSON object'}",
+            "live_link": "https://stephdlm.github.io/OOP-Game-Show-App/",
             "github_link": "https://github.com/StephDLM/Public-API-Request.git",
-            "image_urls": "/static/images/image name"
+            "image_urls": "/static/images/Unit5-550.png"
 
 
         }
