@@ -1,39 +1,19 @@
 //variables 
 const express = require('express');
 const app = express();
-var data = require('./data.json')
+const router = express.Router();
+const data = require('./data.json');
+const routes = require('./routes');
 
-//middleware
-    // view engine setup
-app.set('view engine', 'pug');
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-// app.use(cookieParser());
-app.use('/', indexRouter);
 
-//static route to serve static files in public folder
-app.use(express.static(path.join(__dirname, 'public')));
-
-//set routes
-app.get('/', (req, res) => {
-    res.render("index", {data});
-});
-app.get('/about', (req, res) => {
-    res.render("about");
-});
-
-//dynamic project route 
-app.get('/project.id', (req, res) => {
-    const dataProject = data[req.params.id]
-    if (dataProject) {
-      res.render('project', { dataProject });
-    } else if ( dataProject === undefined ){
-        const err = new Error('Not Found');
-        err.status = 404;
-        err.message = "This web page can't be located"
-        res.render('error', { error: err })
-    }});
-
+// view engine setup
+router.set('view engine', 'pug');
+router.use(express.json());
+router.use(express.urlencoded({ extended: false }));
+// router.use(cookieParser());
+router.use('/', indexRouter);
+    
+app.use(routes);
 
 //start server
 app.listen(3000, () => {
