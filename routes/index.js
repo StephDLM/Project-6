@@ -15,7 +15,7 @@ const app = express();
     
     //dynamic project route to get page 
     router.get('/project.id', (req, res, next) => {
-        const dataProject = data[req.params.id];
+        const dataProject = req.params.id;
         if (dataProject) {
           res.render('project', { dataProject });
         } else if ( dataProject === undefined ){
