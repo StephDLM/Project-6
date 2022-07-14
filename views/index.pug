@@ -13,6 +13,11 @@ block content
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
+            
+            .cell
+          a(href=`/projects/${project.id}`)
+            img.thumbnail(src='https://placehold.it/550x550', alt='')
+            h5 project.project_name
 
       //- Use the Pug `each` iterator to loop over the projects in your data file  
       

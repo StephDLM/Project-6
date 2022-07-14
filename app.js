@@ -36,7 +36,7 @@ app.use ((req,res, next) => {
     const err = new Error("not-found");
     err.status = 404;
     // res.status(404).render('not-found');
-    // err.message = "This web page can't be located";
+    err.message = "This web page can't be located";
     // res.render('error', { error: err })
     next(err);
 });
@@ -46,15 +46,15 @@ app.use((err, req, res, next) => {
     res.locals.error = err
         res.status(err.status);
         res.render("error") 
-    //setting locals with error property
-    // if (err === 404){
-    //     // res.status(404).render('not-found', { err });
-    //     // next(err)
-    // } else {
-    //     err.status = 500;
-    //     err.message = "Oops! Something went wrong with the server.";
-    //     res.status(res.status || 500).render('error', {err} )
-    // }
+    // setting locals with error property
+    if (err === 404){
+        // res.status(404).render('not-found', { err });
+        // next(err)
+    } else {
+        err.status = 500;
+        err.message = "Oops! Something went wrong with the server.";
+        res.status(res.status || 500).render('error', {err} )
+    }
   });
 
 //start server
