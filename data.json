@@ -24,7 +24,7 @@
         {
             "id": 2,
             "project_name": "Accessible Form",
-            "description": "something",
+            "description": "Made a form user-friendly by adding customized and conditional behavior and interactivity. Validated user input and providing helpful error messages when the user enters invalid information into the form fields.",
             "technologies": "{'JavaScript', 'HTML', 'CSS'}",
             "live_link": "https://stephdlm.github.io/Accessible-Form/",
             "github_link": "https://github.com/StephDLM/Accessible-Form.git",
@@ -35,7 +35,7 @@
         {
             "id": 3,
             "project_name": "OOP Game Show App",
-            "description": "something",
+            "description": "Create a browser-based, word guessing game where I used Object-Oriented Programming to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard Creared a code that will choose a random phrase, split the phrase into letters, and put those letters onto the gameboard. Each time the player guesses a letter, the program compares the letter the player has chosen with the random phrase. If the letter is in the phrase, the gameboard displays the chosen letters on the screen. A player continues to select letters until they guess the phrase (and win), or make five incorrect guesses (and lose).If the player completes the phrase before they run out of guesses, a winning screen appears. If the player guesses incorrectly five times, a losing screen appears.",
             "technologies":"{'JavaScript', 'HTML', 'CSS'}",
             "live_link": "https://stephdlm.github.io/OOP-Game-Show-App/",
             "github_link": "https://github.com/StephDLM/OOP-Game-Show-App.git",
