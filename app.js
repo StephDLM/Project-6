@@ -33,30 +33,29 @@ app.use('/index',indexRouter);
 //pass an object as a parameter to next
 //render error page 404 by sending response to the client, setting up the response status to 404, and render not-found view
 app.use ((req,res, next) => {
-    // const err = new Error();
-    res.status(404).render('not-found');
-    err.message = "This web page can't be located";
+    const err = new Error("not-found");
+    err.status = 404;
+    // res.status(404).render('not-found');
+    // err.message = "This web page can't be located";
     // res.render('error', { error: err })
-    // next(err);
-
-})
+    next(err);
+});
 
 //render global error 
 app.use((err, req, res, next) => {
+    res.locals.error = err
+        res.status(err.status);
+        res.render("error") 
     //setting locals with error property
-    res.locals.err = err
-    res.render("error", err)
-    res.status(err.status);
-    if (err === 404){
-        res.status(404).render('not-found', { err });
-        // next(err)
-    } else {
-        err.status = 500;
-        err.message = "Opps! Something went wrong with the server.";
-        res.status(res.status || 500).render('error', {err} )
-    }
+    // if (err === 404){
+    //     // res.status(404).render('not-found', { err });
+    //     // next(err)
+    // } else {
+    //     err.status = 500;
+    //     err.message = "Oops! Something went wrong with the server.";
+    //     res.status(res.status || 500).render('error', {err} )
+    // }
   });
-  module.exports = app;
 
 //start server
 app.listen(3000, () => {
