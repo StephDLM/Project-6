@@ -35,8 +35,6 @@ app.use ((req,res, next) => {
 
 //render global error handler
 app.use((err, req, res, next) => {
-        // res.status(err.status);
-        // res.render("error") 
     // setting locals with error property
     if (err){
         if (err.status === 404){
