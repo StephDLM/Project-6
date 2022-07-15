@@ -6,17 +6,15 @@ block content
 
     //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
     h1 Making the web better, one GitHub repo at a time!
-
     //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
     p This portfolio contains the projects that I completed while working on my FullStack JavaScript TechDegree from TreeHouse. 
 
-
   article.portfolio-project-thumbs
     .projects-box.box.grid
-            
-            .cell
-          a(href=`/projects/${project.id}`)
-            img.thumbnail(src='https://placehold.it/550x550', alt='')
+      each project in projects
+        .cell
+          a(href=`/project/${projects.id}`)
+            img.thumbnail(src=`${project.images_url}}`, alt='Snapshot of project')
             h5 project.project_name
 
       //- Use the Pug `each` iterator to loop over the projects in your data file  

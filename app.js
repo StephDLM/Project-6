@@ -1,39 +1,31 @@
 //variables 
 const express = require('express');
 const app = express();
-const router = express.Router();
-const data = require('./data.json');
 const routes = require('./routes');
 const indexRouter = require('./routes/index')
-const path = require('path');
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
+//static route to serve static files in public folder
+app.use('/static', express.static('public'));
+//view engine setup using pug
 app.set('view engine', 'pug');
+//use route index 
+app.use('/index',indexRouter);
 
 //middleware for accessing body
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-//static route to serve static files in public folder
-// app.use(express.static('public'));
-app.use('/static', express.static(path.join(__dirname, 'public')));
-
 //route to redirect to the index 
-app.get('/', (req, red) =>{
+app.get('/', (req, res) =>{
     res.redirect('/index')
 });
 
-//use route index 
-app.use('/index',indexRouter);
-    
-// app.use(routes);
-
+app.use(routes);
 
 //pass an object as a parameter to next
 //render error page 404 by sending response to the client, setting up the response status to 404, and render not-found view
 app.use ((req,res, next) => {
-    const err = new Error("not-found");
+    const err = new Error('not-found');
     err.status = 404;
     // res.status(404).render('not-found');
     err.message = "This web page can't be located";
@@ -41,19 +33,19 @@ app.use ((req,res, next) => {
     next(err);
 });
 
-//render global error 
+//render global error handler
 app.use((err, req, res, next) => {
-    res.locals.error = err
-        res.status(err.status);
-        res.render("error") 
+        // res.status(err.status);
+        // res.render("error") 
     // setting locals with error property
-    if (err === 404){
-        // res.status(404).render('not-found', { err });
-        // next(err)
-    } else {
-        err.status = 500;
-        err.message = "Oops! Something went wrong with the server.";
-        res.status(res.status || 500).render('error', {err} )
+    if (err){
+        if (err.status === 404){
+            res.status(404).render('not-found', { err });
+                } else {
+            err.status = 500;
+            err.message = "Oops! Something went wrong with the server.";
+            res.status(err.status || 500).render('error', {err} )
+        }
     }
   });
 
