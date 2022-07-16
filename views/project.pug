@@ -22,14 +22,13 @@ block content
       .project-tech-links-box.box
         h6 Technologies
         ul #{project.technologies}
-
-          //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
-         each technology in project.technologies
-          li= technology
+           each technology in project.technologies
+            li= technology
+     
 
         //- Add the href values to the links below
-        a.btn-link(href=`/projects/${project.live_link}`) Live Demo
-        a.btn-link(href=`/projects/${project.github_link}`) GitHub Repo
+        a.btn-link(href=`${project.live_link}`) Live Demo
+        a.btn-link(href=`${project.github_link}`) GitHub Repo
 
     .project-img-box.box
 

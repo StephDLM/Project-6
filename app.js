@@ -34,18 +34,18 @@ app.use ((req,res, next) => {
 });
 
 //render global error handler
-app.use((err, req, res, next) => {
-    // setting locals with error property
-    if (err){
-        if (err.status === 404){
-            res.status(404).render('not-found', { err });
-                } else {
-            err.status = 500;
-            err.message = "Oops! Something went wrong with the server.";
-            res.status(err.status || 500).render('error', {err} )
-        }
-    }
-  });
+// app.use((err, req, res, next) => {
+//     // setting locals with error property
+//     if (err){
+//         if (err.status === 404){
+//             res.status(404).render('not-found', { err });
+//                 } else {
+//             err.status = 500;
+//             err.message = "Oops! Something went wrong with the server.";
+//             res.status(err.status || 500).render('error', {err} )
+//         }
+//     }
+//   });
 
 //start server
 app.listen(3000, () => {

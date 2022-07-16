@@ -14,12 +14,11 @@ const { projects } = require('./../data.json')
     });
    //----- SOMETHING WRONG HERE-------
     //dynamic project route to get page with data about projects
-    router.get('/projects.id', (req, res, next) => {
+    router.get('/projects/:id', (req, res, next) => {
         const dataProject = req.params.id;
         const project = projects[dataProject]
-
         if (project) {
-          res.render('project', { projects });
+          res.render('project', { project });
         } else {
             const err = new Error('Not Found');
             err.status = 404;
