@@ -4,7 +4,7 @@
             "id": 0,
             "project_name": "Random Quote Generator",
             "description": "Created a random quote generator that iterates through 5 different quotes when you click the 'generate' button.",
-            "technologies":"{'JavaScript', 'HTML', 'CSS'}",
+            "technologies":["JavaScript", "HTML", "CSS"],
             "live_link": "https://stephdlm.github.io/A-Random-Quote-Generator/",
             "github_link": "https://github.com/StephDLM/A-Random-Quote-Generator.git",
             "image_urls": ["/static/images/Unit1-550.png", "/static/images/Unit1-1200.png"]
@@ -14,7 +14,7 @@
             "id": 1,
             "project_name": "Data Pagination and Filtering",
             "description": "Using pagination to  display 9 students on the page and added navigation, that the user can click to display different pages of students.",
-            "technologies": "{'JavaScript', 'HTML', 'CSS'}",
+            "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://github.com/StephDLM/Data-Pagination-and-Filtering/settings/pages",
             "github_link": "https://github.com/StephDLM/Data-Pagination-and-Filtering.git",
             "image_urls": ["/static/images/Unit2-550.png", "/static/images/Unit2-1200.png"]
@@ -25,7 +25,7 @@
             "id": 2,
             "project_name": "Accessible Form",
             "description": "Made a form user-friendly by adding customized and conditional behavior and interactivity. Validated user input and providing helpful error messages when the user enters invalid information into the form fields.",
-            "technologies": "{'JavaScript', 'HTML', 'CSS'}",
+            "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://stephdlm.github.io/Accessible-Form/",
             "github_link": "https://github.com/StephDLM/Accessible-Form.git",
             "image_urls": ["/static/images/Unit3-550.png", "/static/images/Unit3-1200.png"]
@@ -36,7 +36,7 @@
             "id": 3,
             "project_name": "OOP Game Show App",
             "description": "Create a browser-based, word guessing game where I used Object-Oriented Programming to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard Creared a code that will choose a random phrase, split the phrase into letters, and put those letters onto the gameboard. Each time the player guesses a letter, the program compares the letter the player has chosen with the random phrase. If the letter is in the phrase, the gameboard displays the chosen letters on the screen. A player continues to select letters until they guess the phrase (and win), or make five incorrect guesses (and lose).If the player completes the phrase before they run out of guesses, a winning screen appears. If the player guesses incorrectly five times, a losing screen appears.",
-            "technologies":"{'JavaScript', 'HTML', 'CSS'}",
+            "technologies":["JavaScript", "HTML", "CSS"],
             "live_link": "https://stephdlm.github.io/OOP-Game-Show-App/",
             "github_link": "https://github.com/StephDLM/OOP-Game-Show-App.git",
             "image_urls": ["/static/images/Unit4-550.png", "/static/images/Unit4-1200.png"]
@@ -47,7 +47,7 @@
             "id": 4,
             "project_name": "Public API Request",
             "description": "Built an app that uses Random User Generator API  to grab information for 12 random “employees,” and use that data to build a prototype for an employee directory. Requested a JSON object from the API and parse the data so that 12 employees are listed in a grid with their thumbnail image, full name, email, and location. Clicking the employee’s image or name will open a modal window with more information, such as the employee’s birthday and address.",
-            "technologies":"{'JavaScript', 'HTML', 'CSS', 'API', 'JSON object'}",
+            "technologies":["JavaScript", "HTML", "CSS", "API", "JSON object"],
             "live_link": "https://stephdlm.github.io/OOP-Game-Show-App/",
             "github_link": "https://github.com/StephDLM/Public-API-Request.git",
             "image_urls": ["/static/images/Unit5-550.png", "/static/images/Unit5-1200.png"]
