@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router();
-// const { data } = require('./../data.json')
 const { projects } = require('./../data.json')
-// const data = projects.projects
-// const app = express();
+
 
 //middleware    
     //set routes to home page and pass to index
@@ -19,10 +17,9 @@ const { projects } = require('./../data.json')
     router.get('/projects.id', (req, res, next) => {
         const dataProject = req.params.id;
         const project = projects[dataProject]
-        //find( ({ id }) => id === +dataProject);
 
         if (project) {
-          res.render('projects', { projects });
+          res.render('project', { projects });
         } else {
             const err = new Error('Not Found');
             err.status = 404;
