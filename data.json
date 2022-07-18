@@ -15,7 +15,7 @@
             "project_name": "Data Pagination and Filtering",
             "description": "Using pagination to  display 9 students on the page and added navigation, that the user can click to display different pages of students.",
             "technologies": ["JavaScript", "HTML", "CSS"],
-            "live_link": "https://github.com/StephDLM/Data-Pagination-and-Filtering/settings/pages",
+            "live_link": "https://stephdlm.github.io/Data-Pagination-and-Filtering/",
             "github_link": "https://github.com/StephDLM/Data-Pagination-and-Filtering.git",
             "image_urls": ["/static/images/Unit2-550.png", "/static/images/Unit2-1200.png"]
 
@@ -48,7 +48,7 @@
             "project_name": "Public API Request",
             "description": "Built an app that uses Random User Generator API  to grab information for 12 random “employees,” and use that data to build a prototype for an employee directory. Requested a JSON object from the API and parse the data so that 12 employees are listed in a grid with their thumbnail image, full name, email, and location. Clicking the employee’s image or name will open a modal window with more information, such as the employee’s birthday and address.",
             "technologies":["JavaScript", "HTML", "CSS", "API", "JSON object"],
-            "live_link": "https://stephdlm.github.io/OOP-Game-Show-App/",
+            "live_link": "https://stephdlm.github.io/Public-API-Request/",
             "github_link": "https://github.com/StephDLM/Public-API-Request.git",
             "image_urls": ["/static/images/Unit5-550.png", "/static/images/Unit5-1200.png"]
 
