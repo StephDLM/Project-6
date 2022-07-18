@@ -108,7 +108,7 @@ a {
 nav {
   width: 100%;
   padding: 20px;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #813f83;
 }
 
 nav a {
@@ -201,7 +201,7 @@ nav a span {
   width: 20px;
   height: 16px;
   border: none;
-  background: #0a0a0a;
+  background: #2a4528;
   margin-top: 3px;
   margin-right: 10px;
   border-top: 2px solid #fefefe;
@@ -258,7 +258,7 @@ nav a span {
 .cell img {
   width: 100%;
   min-width: 100px;
-  border: 4px solid #fff;
+  border: 4px solid rgb(186, 145, 196);
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
 
@@ -284,7 +284,7 @@ nav a span {
   width: 100%;
   max-width: 1065px;
   margin-bottom: 15px;
-  border: 4px solid #fff;
+  border: 4px solid rgb(186, 145, 196);
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
 
