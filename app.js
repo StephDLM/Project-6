@@ -28,7 +28,7 @@ app.use ((req,res, next) => {
     const err = new Error('not-found');
     err.status = 404;
     err.message = "This web page can't be located";
-    console.log("This web page can't be located");
+    console.log("This web page can't be located", err);
     next(err);
 });
 
